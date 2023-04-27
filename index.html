@@ -3,9 +3,18 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Page Title</title>
+    <title>Firebase testing page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="main.js" type="module"></script>
+    <script type="module">
+      import { addU } from "./main.js";
+      window.addU = addU;
+    </script>
   </head>
-  <body></body>
+  <body>
+    <h1>THIS IS A PAGE</h1>
+    <button onclick="addU()">Click me!</button>
+    <h2>List of inputs:</h2>
+    <ul id="list"></ul>
+  </body>
 </html>
